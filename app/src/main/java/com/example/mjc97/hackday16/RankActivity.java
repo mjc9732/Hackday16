@@ -1,38 +1,62 @@
 package com.example.mjc97.hackday16;
 
+
 import android.app.ListActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.Toast;
+import android.app.Activity;
+import android.widget.AdapterView.OnItemClickListener;
 
-public class RankActivity extends ListActivity {
 
 
+public class RankActivity extends Activity {
 
+    ListView list;
+    String[] itemname ={
+            "Safari",
+            "Camera",
+            "Global",
+            "FireFox",
+            "UC Browser",
+            "Android Folder",
+            "VLC Player",
+            "Cold War"
+    };
 
-    Employee a = new Employee(R.drawable.ic_launcher, "David", "Peachtree Stars", "Systems", 0);
-    Employee b = new Employee(R.drawable.ic_launcher, "Allen", "Peachtree Stars", "Systems", 0);
-    Employee c = new Employee(R.drawable.ic_launcher, "Chris", "Peachtree Stars", "Systems", 0);
-    Employee d = new Employee(R.drawable.ic_launcher, "Joseph", "Peachtree Stars", "Systems", 0);
-    Employee e = new Employee(R.drawable.ic_launcher, "Nick", "Peachtree Stars", "Systems", 0);
-
-    Employee[] itemname = {a, b, c, d, e};
-
+    Integer[] imgid={
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rank);
 
-        populateListView();
-    }
+        NewAdapter adapter=new NewAdapter(this, itemname, imgid);
+        list=(ListView)findViewById(R.id.list);
+        list.setAdapter(adapter);
 
-    private void populateListView() {
+        list.setOnItemClickListener(new OnItemClickListener() {
 
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                // TODO Auto-generated method stub
+                String Slecteditem= itemname[+position];
+                Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
 
-        this.setListAdapter(new ArrayAdapter<Employee>(
-                this, R.layout.mylist,
-                R.id.Itemname,itemname));
-
-
+            }
+        });
     }
 }
+
+

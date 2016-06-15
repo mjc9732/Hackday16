@@ -7,7 +7,7 @@ import android.graphics.drawable.Drawable;
  */
 public class Employee {
 
-    public  int pic;
+    public  static int pic;
     public  String name;
     public  String team;
     public  String department;
