@@ -7,13 +7,13 @@ import android.graphics.drawable.Drawable;
  */
 public class Employee {
 
-    public  Drawable pic;
+    public  int pic;
     public  String name;
     public  String team;
     public  String department;
     public  int points;
 
-    public  Employee (Drawable pic, String name, String team, String department, int points) {
+    public  Employee (int pic, String name, String team, String department, int points) {
         this.pic = pic;
         this.name = name;
         this.team = team;
@@ -29,7 +29,7 @@ public class Employee {
         points = 0;
     }
 
-    public Drawable getPic(){
+    public int getPic(){
         return pic;
     }
 
@@ -47,6 +47,10 @@ public class Employee {
 
     public int getPoints(){
         return points;
+    }
+
+    public String toString() {
+        return getName();
     }
 
 }
