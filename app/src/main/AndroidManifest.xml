@@ -17,6 +17,10 @@
         </activity>
         <activity android:name=".FinderActivity">
         </activity>
+        <activity android:name=".ProfileActivity">
+        </activity>
+        <activity android:name=".TeamMembersActivity">
+        </activity>
     </application>
 
 </manifest>
