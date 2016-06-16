@@ -39,15 +39,15 @@ public class DepartmentProfileActivity extends Activity {
     };
 
     Integer[] imgid={
-            R.drawable.nedstark,
-            R.drawable.danaerys,
-            R.drawable.tyrion,
-            R.drawable.ramsay,
-            R.drawable.melisan,
-            R.drawable.branstark,
-            R.drawable.jon,
-            R.drawable.brienne,
-            R.drawable.gregor
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher
     };
 
     String[] honor={

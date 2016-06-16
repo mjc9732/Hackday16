@@ -40,15 +40,15 @@ public class TeamProfileActivity extends Activity {
     };
 
     Integer[] imgid={
-            R.drawable.nedstark,
-            R.drawable.catelyn,
-            R.drawable.robb,
-            R.drawable.sansa,
-            R.drawable.arya,
-            R.drawable.branstark,
-            R.drawable.jon,
-            R.drawable.brienne,
-            R.drawable.hodor
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher
     };
 
     Integer[] honorPic={
