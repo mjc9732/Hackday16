@@ -1,17 +1,15 @@
 package com.example.mjc97.hackday16;
 
 
+import android.graphics.Color;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.ListView;
-import android.widget.Toast;
-import android.app.Activity;
-import android.widget.AdapterView.OnItemClickListener;
 
 
 
-public class RankingActivity extends Activity {
+public class RankingActivity extends AppCompatActivity {
 
     ListView list;
     String[] itemname ={
@@ -79,8 +77,10 @@ public class RankingActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_department_profile);
-
+        setContentView(R.layout.activity_ranking);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.rank_toolbar);
+        myToolbar.setTitle("Leaderboard");
+        myToolbar.setTitleTextColor(Color.WHITE);
         adapter=new NewAdapter(this, itemname, team, honor, honorPic, imgid);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);

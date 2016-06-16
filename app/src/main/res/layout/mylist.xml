@@ -19,7 +19,6 @@
         android:text="Name"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:padding="2dp"
-        android:textColor="#FFFFFF"
         android:layout_toRightOf="@+id/icon"
         android:layout_toEndOf="@+id/icon" />
 
@@ -28,7 +27,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Team"
-        android:textColor="#FFFFFF"
         android:layout_below="@+id/name_tv"
         android:layout_toRightOf="@+id/icon"
         android:layout_toEndOf="@+id/icon" />
@@ -38,7 +36,6 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Honor"
-        android:textColor="#FFFFFF"
         android:id="@+id/honor_tv"
         android:layout_marginRight="18dp"
         android:layout_marginEnd="18dp"
@@ -50,7 +47,6 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:id="@+id/star_iv"
-
         android:layout_alignTop="@+id/honor_tv"
         android:layout_toLeftOf="@+id/honor_tv"
         android:layout_toStartOf="@+id/honor_tv" />

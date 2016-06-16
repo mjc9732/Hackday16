@@ -1,6 +1,7 @@
 package com.example.mjc97.hackday16;
 
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -83,6 +84,7 @@ public class DepartmentProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_department_profile);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.dep_toolbar);
         myToolbar.setTitle("Department");
+        myToolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(myToolbar);
 
         adapter=new NewAdapter(this, itemname, team, honor, honorPic, imgid);

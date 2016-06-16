@@ -3,6 +3,7 @@ package com.example.mjc97.hackday16;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -84,6 +85,7 @@ public class TeamProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_team_profile);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.team_toolbar);
         myToolbar.setTitle("Team");
+        myToolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(myToolbar);
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

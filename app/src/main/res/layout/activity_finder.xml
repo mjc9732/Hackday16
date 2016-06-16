@@ -4,14 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:background="@drawable/background_red"
     android:layout_height="match_parent">
     
     <LinearLayout
-        android:background="@drawable/background_red"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/my_toolbar"
@@ -19,6 +18,7 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:elevation="4dp"
+            android:titleTextColor="@color/white"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
@@ -29,8 +29,14 @@
             android:id="@+id/button_team"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:stateListAnimator="@null"
             android:layout_marginTop="106dp"
-            android:layout_gravity="center_horizontal"/>
+            android:background="@color/white"
+            android:layout_weight="0.10"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
 
         <Button
             android:layout_width="match_parent"
@@ -39,8 +45,10 @@
             android:id="@+id/button_department"
             android:layout_below="@+id/button"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="45dp"
-            android:layout_gravity="center_horizontal"/>
+            android:stateListAnimator="@null"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_weight="0.10"/>
     </LinearLayout>
 
     <ListView android:id="@+id/left_drawer"
