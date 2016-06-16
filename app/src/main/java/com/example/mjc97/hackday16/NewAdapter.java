@@ -13,14 +13,18 @@ public class NewAdapter extends ArrayAdapter<String> {
 
     private final Activity context;
     private final String[] itemname;
+    private final String[] description;
+    private final String[] honor;
     private final Integer[] imgid;
 
-    public NewAdapter(Activity context, String[] itemname, Integer[] imgid) {
+    public NewAdapter(Activity context, String[] itemname, String[] description, String[] honor, Integer[] imgid) {
         super(context, R.layout.mylist, itemname);
         // TODO Auto-generated constructor stub
 
         this.context=context;
         this.itemname=itemname;
+        this.description=description;
+        this.honor = honor;
         this.imgid=imgid;
     }
 
@@ -28,14 +32,22 @@ public class NewAdapter extends ArrayAdapter<String> {
         LayoutInflater inflater=context.getLayoutInflater();
         View rowView=inflater.inflate(R.layout.mylist, null,true);
 
-        TextView txtTitle = (TextView) rowView.findViewById(R.id.item);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
-        TextView extratxt = (TextView) rowView.findViewById(R.id.textView1);
+        TextView myName = (TextView) rowView.findViewById(R.id.name_tv);
+        ImageView myFace = (ImageView) rowView.findViewById(R.id.icon);
+        TextView myTeam = (TextView) rowView.findViewById(R.id.team_tv);
+        TextView myHonor = (TextView) rowView.findViewById(R.id.honor_tv);
 
-        txtTitle.setText(itemname[position]);
-        imageView.setImageResource(imgid[position]);
-        extratxt.setText("Description "+itemname[position]);
+        myName.setText(itemname[position]);
+        myFace.setImageResource(imgid[position]);
+        myTeam.setText(description[position]);
+        myHonor.setText(honor[position]);
         return rowView;
 
-    };
+    }
+
+    public void run() {
+        notifyDataSetChanged();
+    }
+
+
 }

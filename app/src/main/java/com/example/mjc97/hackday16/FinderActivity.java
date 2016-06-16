@@ -78,7 +78,7 @@ public class FinderActivity extends AppCompatActivity implements AdapterView.OnI
                 mDrawerLayout.closeDrawer(mDrawerList);
                 break;
             case 1:
-                startActivity(new Intent(this, RankActivity.class));
+                startActivity(new Intent(this, TeamProfileActivity.class));
                 mDrawerLayout.closeDrawer(mDrawerList);
                 break;
             default:

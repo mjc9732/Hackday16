@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         testButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, RankActivity.class));
+                startActivity(new Intent(MainActivity.this, TeamProfileActivity.class));
             }
         });
 
