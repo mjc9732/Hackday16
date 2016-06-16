@@ -15,39 +15,39 @@ public class DepartmentProfileActivity extends Activity {
 
     ListView list;
     String[] itemname ={
-            "Ned Stark",
-            "Daenerys Targaryen",
-            "Tyrion Lannister",
-            "Ramsay Bolton",
-            "Melisandre",
-            "Brandon Stark",
-            "Jon Snow",
-            "Brienne of Tarth",
-            "Gregor Clegane"
+            "Brian Harris",
+            "Richard Ferguson",
+            "Brian Buckland",
+            "Sophie Robertson",
+            "Chloe Rees",
+            "Trevor Underwood",
+            "Thomas Clarkson",
+            "Nicholas Harris",
+            "Jack MacLeod"
     };
 
     String[] team ={
-            "Westeros",
-            "Westeros",
-            "Westeros",
-            "Westeros",
-            "Westeros",
-            "Westeros",
-            "Westeros",
-            "Westeros",
-            "Westeros"
+            "Systems",
+            "Systems",
+            "Systems",
+            "Systems",
+            "Systems",
+            "Systems",
+            "Systems",
+            "Systems",
+            "Systems"
     };
 
     Integer[] imgid={
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher
+            R.drawable.pic13,
+            R.drawable.pic12,
+            R.drawable.pic5,
+            R.drawable.pic8,
+            R.drawable.pic9,
+            R.drawable.pic3,
+            R.drawable.pic4,
+            R.drawable.pic7,
+            R.drawable.pic6
     };
 
     String[] honor={
@@ -63,15 +63,15 @@ public class DepartmentProfileActivity extends Activity {
     };
 
     Integer[] honorPic={
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star
     };
 
     NewAdapter adapter;

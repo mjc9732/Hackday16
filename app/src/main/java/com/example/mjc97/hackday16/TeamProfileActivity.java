@@ -13,51 +13,53 @@ public class TeamProfileActivity extends Activity {
 
     ListView list;
     String[] itemname ={
-            "Ned Stark",
-            "Catelyn Stark",
-            "Robb Stark",
-            "Sansa Stark",
-            "Arya Stark",
-            "Brandon Stark",
-            "Jon Snow",
-            "Brienne of Tarth",
-            "Hodor"
+            "Trevor Underwood",
+            "Thomas Clarkson",
+            "Brian Buckland",
+            "Jack MacLeod",
+            "Nicholas Harris",
+            "Sophie Robertson",
+            "Chloe Rees",
+            "David Chang",
+            "Allen Wilson-Myers"
     };
 
     String[] team ={
-            "Team Stark",
-            "Team Stark",
-            "Team Stark",
-            "Team Stark",
-            "Team Stark",
-            "Team Stark",
-            "Team Stark",
-            "Team Stark",
-            "Team Stark"
+            "Team Winter",
+            "Team Winter",
+            "Team Winter",
+            "Team Winter",
+            "Team Winter",
+            "Team Winter",
+            "Team Winter",
+            "Team Winter",
+            "Team Winter"
+
     };
 
     Integer[] imgid={
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher
+            R.drawable.pic3,
+            R.drawable.pic4,
+            R.drawable.pic5,
+            R.drawable.pic6,
+            R.drawable.pic7,
+            R.drawable.pic8,
+            R.drawable.pic9,
+            R.drawable.pic10,
+            R.drawable.pic11
+
     };
 
     Integer[] honorPic={
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher,
-            R.drawable.ic_launcher
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star,
+            R.drawable.star
     };
 
     String[] honor={
