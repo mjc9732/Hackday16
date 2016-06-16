@@ -62,7 +62,17 @@ public class DepartmentProfileActivity extends Activity {
             "0"
     };
 
-
+    Integer[] honorPic={
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher
+    };
 
     NewAdapter adapter;
 
@@ -71,7 +81,7 @@ public class DepartmentProfileActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_department_profile);
 
-        adapter=new NewAdapter(this, itemname, team, honor, imgid);
+        adapter=new NewAdapter(this, itemname, team, honor, honorPic, imgid);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
 

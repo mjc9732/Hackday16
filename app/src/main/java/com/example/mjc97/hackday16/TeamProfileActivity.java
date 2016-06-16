@@ -51,6 +51,18 @@ public class TeamProfileActivity extends Activity {
             R.drawable.hodor
     };
 
+    Integer[] honorPic={
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher,
+            R.drawable.ic_launcher
+    };
+
     String[] honor={
             "0",
             "0",
@@ -69,7 +81,7 @@ public class TeamProfileActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_profile);
 
-        adapter=new NewAdapter(this, itemname, team, honor, imgid);
+        adapter=new NewAdapter(this, itemname, team, honor, honorPic, imgid);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new OnItemClickListener() {

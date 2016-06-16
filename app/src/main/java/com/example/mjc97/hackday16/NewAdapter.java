@@ -15,9 +15,10 @@ public class NewAdapter extends ArrayAdapter<String> {
     private final String[] itemname;
     private final String[] description;
     private final String[] honor;
+    private final Integer[] honorpic;
     private final Integer[] imgid;
 
-    public NewAdapter(Activity context, String[] itemname, String[] description, String[] honor, Integer[] imgid) {
+    public NewAdapter(Activity context, String[] itemname, String[] description, String[] honor, Integer[] honorpic, Integer[] imgid) {
         super(context, R.layout.mylist, itemname);
         // TODO Auto-generated constructor stub
 
@@ -25,6 +26,7 @@ public class NewAdapter extends ArrayAdapter<String> {
         this.itemname=itemname;
         this.description=description;
         this.honor = honor;
+        this.honorpic = honorpic;
         this.imgid=imgid;
     }
 
@@ -41,6 +43,7 @@ public class NewAdapter extends ArrayAdapter<String> {
         myName.setText(itemname[position]);
         myFace.setImageResource(imgid[position]);
         myTeam.setText(description[position]);
+        myHonorPic.setImageResource(honorpic[position]);
         myHonor.setText(honor[position]);
         return rowView;
 
