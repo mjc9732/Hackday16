@@ -99,7 +99,7 @@ public class TeamProfileActivity extends AppCompatActivity {
                                     final int position, long id) {
                 // TODO Auto-generated method stub
                 AlertDialog.Builder builder = new AlertDialog.Builder(TeamProfileActivity.this);
-                builder.setView(R.layout.dialog_honor).setMessage("Honor")
+                builder.setView(R.layout.dialog_honor).setMessage("Tell us more...")
                         .setCancelable(true)
                         .setPositiveButton("Honor", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
