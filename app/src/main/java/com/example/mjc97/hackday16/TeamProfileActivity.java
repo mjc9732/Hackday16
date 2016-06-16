@@ -1,17 +1,18 @@
 package com.example.mjc97.hackday16;
 
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class TeamProfileActivity extends Activity {
+public class TeamProfileActivity extends AppCompatActivity {
 
     ListView list;
     String[] itemname ={
@@ -81,6 +82,10 @@ public class TeamProfileActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_profile);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.team_toolbar);
+        myToolbar.setTitle("Team");
+        setSupportActionBar(myToolbar);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         adapter=new NewAdapter(this, itemname, team, honor, honorPic, imgid);
         list=(ListView)findViewById(R.id.list);

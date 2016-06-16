@@ -2,16 +2,17 @@ package com.example.mjc97.hackday16;
 
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.app.Activity;
-import android.widget.AdapterView.OnItemClickListener;
 
 
 
-public class DepartmentProfileActivity extends Activity {
+public class DepartmentProfileActivity extends AppCompatActivity {
 
     ListView list;
     String[] itemname ={
@@ -80,6 +81,9 @@ public class DepartmentProfileActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_department_profile);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.dep_toolbar);
+        myToolbar.setTitle("Department");
+        setSupportActionBar(myToolbar);
 
         adapter=new NewAdapter(this, itemname, team, honor, honorPic, imgid);
         list=(ListView)findViewById(R.id.list);

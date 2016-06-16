@@ -23,22 +23,24 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="My Team"
             android:id="@+id/button_team"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="106dp"/>
+            android:layout_marginTop="106dp"
+            android:layout_gravity="center_horizontal"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="My Department"
             android:id="@+id/button_department"
             android:layout_below="@+id/button"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="45dp"/>
+            android:layout_marginTop="45dp"
+            android:layout_gravity="center_horizontal"/>
     </LinearLayout>
 
     <ListView android:id="@+id/left_drawer"
