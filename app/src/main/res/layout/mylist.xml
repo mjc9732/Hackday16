@@ -47,9 +47,10 @@
         android:layout_alignParentEnd="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:id="@+id/star_iv"
+
         android:layout_alignTop="@+id/honor_tv"
         android:layout_toLeftOf="@+id/honor_tv"
         android:layout_toStartOf="@+id/honor_tv" />
