@@ -2,6 +2,8 @@ package com.example.mjc97.hackday16;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -87,13 +89,24 @@ public class TeamProfileActivity extends Activity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
+                                    final int position, long id) {
                 // TODO Auto-generated method stub
-                String Slecteditem= itemname[+position] + " gained one honor.";
-                honor[+position]= "" + (Integer.parseInt(honor[+position]) +1);
-                adapter.run();
-                Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
-
+                AlertDialog.Builder builder = new AlertDialog.Builder(TeamProfileActivity.this);
+                builder.setView(R.layout.dialog_honor).setMessage("Honor")
+                        .setCancelable(true)
+                        .setPositiveButton("Honor", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                String Slecteditem= itemname[+position] + " gained one honor.";
+                                honor[+position]= "" + (Integer.parseInt(honor[+position]) +1);
+                                adapter.run();
+                                Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        }).create().show();
             }
         });
     }
