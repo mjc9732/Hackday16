@@ -20,6 +20,7 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".TeamMembersActivity" />
         <activity android:name=".DepartmentProfileActivity" />
+        <activity android:name=".RankingActivity"></activity>
     </application>
 
 </manifest>
