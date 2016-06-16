@@ -3,6 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_red"
     >
 
     <ListView
@@ -11,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:divider="#D50000"
+        android:divider="#FFFFFF"
         android:dividerHeight="4px">
     </ListView>
 

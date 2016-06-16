@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
         android:padding="5dp"
         android:src="#ff0000" />
 
@@ -19,7 +19,7 @@
         android:text="Name"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:padding="2dp"
-        android:textColor="#33CC33"
+        android:textColor="#FFFFFF"
         android:layout_toRightOf="@+id/icon"
         android:layout_toEndOf="@+id/icon" />
 
@@ -28,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Team"
+        android:textColor="#FFFFFF"
         android:layout_below="@+id/name_tv"
         android:layout_toRightOf="@+id/icon"
         android:layout_toEndOf="@+id/icon" />
@@ -37,9 +38,20 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Honor"
+        android:textColor="#FFFFFF"
         android:id="@+id/honor_tv"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
         android:layout_alignBottom="@+id/team_tv"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star_iv"
+        android:layout_alignTop="@+id/honor_tv"
+        android:layout_toLeftOf="@+id/honor_tv"
+        android:layout_toStartOf="@+id/honor_tv" />
 
 </RelativeLayout>

@@ -61,6 +61,9 @@ public class DepartmentProfileActivity extends Activity {
             "0",
             "0"
     };
+
+
+
     NewAdapter adapter;
 
     @Override

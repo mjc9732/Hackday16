@@ -4,6 +4,7 @@ package com.example.mjc97.hackday16;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.app.Activity;
@@ -71,7 +72,6 @@ public class TeamProfileActivity extends Activity {
         adapter=new NewAdapter(this, itemname, team, honor, imgid);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
-
         list.setOnItemClickListener(new OnItemClickListener() {
 
             @Override

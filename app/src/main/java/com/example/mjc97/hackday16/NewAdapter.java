@@ -36,6 +36,7 @@ public class NewAdapter extends ArrayAdapter<String> {
         ImageView myFace = (ImageView) rowView.findViewById(R.id.icon);
         TextView myTeam = (TextView) rowView.findViewById(R.id.team_tv);
         TextView myHonor = (TextView) rowView.findViewById(R.id.honor_tv);
+        ImageView myHonorPic = (ImageView) rowView.findViewById(R.id.star_iv);
 
         myName.setText(itemname[position]);
         myFace.setImageResource(imgid[position]);

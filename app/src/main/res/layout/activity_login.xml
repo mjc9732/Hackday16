@@ -34,12 +34,12 @@
         android:layout_height="50dp"
         android:hint="Password"
 
-        android:inputType="number"
+        android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editText"
         android:textSize="40dp"
         android:textColor="#ee3333"
-        android:background="#FFFFFF"
+        android:background="@drawable/background_red"
         android:autoText="false"
         android:layout_below="@+id/editText1"
         android:layout_alignLeft="@+id/editText1"
@@ -49,12 +49,13 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="Alias"
-        android:inputType="number"
+        android:inputType="text"
         android:ems="10"
         android:id="@+id/editText1"
         android:textSize="40dp"
         android:textColor="#ee3333"
-        android:background="#FFFFFF"
+
+        android:background="@drawable/background_red"
         android:autoText="false"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
@@ -70,7 +71,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MJC TEST"

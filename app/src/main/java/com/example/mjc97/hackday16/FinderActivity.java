@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 public class FinderActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
@@ -18,6 +19,9 @@ public class FinderActivity extends AppCompatActivity implements AdapterView.OnI
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
+
+    Button teamButton;
+    Button departButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +59,24 @@ public class FinderActivity extends AppCompatActivity implements AdapterView.OnI
         };
 
         mDrawerToggle.syncState();
+
+        teamButton = (Button) findViewById(R.id.button_team);
+        teamButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FinderActivity.this, TeamProfileActivity.class));
+            }
+        });
+
+        departButton = (Button) findViewById(R.id.button_department);
+        departButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FinderActivity.this, DepartmentProfileActivity.class));
+            }
+        });
+
+
     }
 
     @Override
