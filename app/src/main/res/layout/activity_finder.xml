@@ -49,6 +49,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/white"
             android:layout_weight="0.10"/>
+
     </LinearLayout>
 
     <ListView android:id="@+id/left_drawer"
