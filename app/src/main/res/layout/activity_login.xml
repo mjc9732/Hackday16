@@ -3,44 +3,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/background_red"
-                tools:context=".MainActivity"
-    >
+                tools:context=".MainActivity">
 
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="150dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/linearLayout">
 
         <ImageView
-            android:scaleType="fitXY"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
             android:src="@drawable/logo"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-    </LinearLayout>
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_above="@+id/editText1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="86dp"/>
+
 
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="Password"
-
+        android:theme="@style/MyEditText"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editText"
-        android:textSize="40dp"
-        android:textColor="#ee3333"
-        android:background="@drawable/background_red"
-        android:autoText="false"
+        android:textColor="#ffffff"
+        android:textColorHint="#a0ffffff"
         android:layout_below="@+id/editText1"
         android:layout_alignLeft="@+id/editText1"
         android:layout_alignStart="@+id/editText1"/>
@@ -49,35 +38,26 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="Alias"
-        android:inputType="text"
-        android:ems="10"
+        android:theme="@style/MyEditText"
         android:id="@+id/editText1"
-        android:textSize="40dp"
-        android:textColor="#ee3333"
-
-        android:background="@drawable/background_red"
-        android:autoText="false"
+        android:textColor="#ffffff"
+        android:textColorHint="#a0ffffff"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"/>
 
     <Button
-        android:scaleType="fitXY"
         android:layout_width="200dp"
         android:layout_height="70dp"
         android:id="@+id/loginButton"
-        android:text="Login"
+        android:text="LOG IN"
         android:layout_marginBottom="71dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MJC TEST"
-        android:id="@+id/mjButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:background="#ac2f31"
+        android:textColor="#80ffffff"/>
 
 </RelativeLayout>
