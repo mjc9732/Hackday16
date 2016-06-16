@@ -19,7 +19,7 @@
         <activity android:name=".TeamProfileActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".TeamMembersActivity" />
-        <activity android:name=".DepartmentProfileActivity"></activity>
+        <activity android:name=".DepartmentProfileActivity" />
     </application>
 
 </manifest>
